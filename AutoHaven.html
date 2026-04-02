@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Haven</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #050505;
+    color: white;
+}
+
+/* NAVBAR */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('Gtr34.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.highlight {
+    color: #00eaff;
+}
+
+.hero p {
+    margin: 20px 0;
+    color: #ccc;
+}
+
+.btn {
+    padding: 15px 30px;
+    background: #ff003c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 20px;
+    background: #0d0d0d;
+}
+
+.feature {
+    text-align: center;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 80px 50px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(90deg,#ff003c,#ff7a00);
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #777;
+}
+
+@media(max-width:768px){
+    .hero h1 {
+        font-size: 36px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+    <div class="logo">AUTO HAVEN</div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Build Your <span class="highlight">JDM Dream</span></h1>
+        <p>Premium car parts imported from Japan 🇯🇵 & China 🇨🇳</p>
+        <button class="btn">Shop Now</button>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <div class="feature">
+        <h3>⚡ Turbo Kits</h3>
+        <p>Boost performance</p>
+    </div>
+    <div class="feature">
+        <h3>🔥 Body Kits</h3>
+        <p>Aggressive design</p>
+    </div>
+    <div class="feature">
+        <h3>🔧 Engine Parts</h3>
+        <p>Reliable & powerful</p>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+    <h2>Featured Parts</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
+            <h3>Turbo Kit</h3>
+            <p>High performance boost</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1493238792000-8113da705763">
+            <h3>Body Kit</h3>
+            <p>Sport styling</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+            <h3>Engine Parts</h3>
+            <p>Durable upgrades</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Upgrade Your Ride Today</h2>
+    <button class="btn">Shop Now</button>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Auto Haven
+</div>
+
+</body>
+</html>
